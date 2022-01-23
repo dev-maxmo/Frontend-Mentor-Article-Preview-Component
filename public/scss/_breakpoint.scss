@@ -1,0 +1,40 @@
+@media screen and (min-width:800px) {
+
+    .card {
+        width: 728px;
+        height: 280px;
+        flex-direction: row;
+        overflow: visible;
+
+        &_background {
+            left: 0;
+            width: auto;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .content {
+            height: 100%;
+            width: calc(728px - 280px);
+            margin-top: 0;
+            margin-left: auto;
+            border-radius: 0px 10px 10px 0px;
+
+            &_intro {
+                font-size: 18px;
+                margin: 40px 80px 20px 40px;
+            }
+
+            &_paragraph {
+                font-size: 14px;
+                margin: 0 40px 0 40px;
+            }
+
+            .avatar {
+                height: 0;
+                padding: 40px;
+            }
+        }
+    }
+
+}

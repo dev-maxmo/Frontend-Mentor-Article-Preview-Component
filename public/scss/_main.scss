@@ -1,0 +1,85 @@
+.card {
+    position: relative;
+    width: 324px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 50px $grayish-blue;
+
+    &_background {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .content {
+        height: 300px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        background-color: #fff;
+        border-radius: 0px 0px 10px 10px;
+
+        &_intro {
+            color: $very-dark-grayish-blue;
+            font-size: 15px;
+            margin: 40px 30px 20px 30px;
+        }
+
+        &_paragraph {
+            color: $desaturated-dark-blue;
+            font-size: 13px;
+            margin: 0 38px 0 30px;
+        }
+
+        .avatar {
+            height: 70px;
+            margin-top: auto;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+
+            &_av-img {
+                width: 40px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+
+            &_info {
+
+                & ._info_name {
+                    color: $very-dark-grayish-blue;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 2px;
+                }
+
+                & ._info_date {
+                    color: $desaturated-dark-blue;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+
+            &_share-img {
+                width: 31px;
+                height: 31px;
+                display: grid;
+                margin-left: auto;
+                background-color: $light-grayish-blue;
+                border-radius: 50%;
+                z-index: 1;
+                cursor: pointer;
+
+                & .icon-share {
+                    margin: auto;
+                    filter: invert(51%) sepia(53%) saturate(201%) hue-rotate(174deg) brightness(87%) contrast(80%);
+                }
+            }
+        }
+    }
+}
